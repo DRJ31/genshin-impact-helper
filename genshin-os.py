@@ -5,6 +5,7 @@ import os
 
 from settings import log, CONFIG, req
 from notify import Notify
+from datetime import date
 
 
 def hexdigest(text):
@@ -80,6 +81,7 @@ class Sign(Base):
                 'region_name': '',
                 'uid': uid,
                 'total_sign_day': total_sign_day,
+                'total_day': date.today().day,
                 'end': '',
             }
             if info_list.get('data',{}).get('is_sign') is True:

@@ -14,6 +14,7 @@ import os
 
 from settings import log, CONFIG, req
 from notify import Notify
+from datetime import date
 
 
 def version():
@@ -151,6 +152,7 @@ class Sign(Base):
                 'region_name': self._region_name_list[i],
                 'uid': uid,
                 'total_sign_day': total_sign_day,
+                'total_day': date.today().day,
                 'end': '',
             }
             if info_list[i]['data']['is_sign'] is True:

@@ -102,7 +102,7 @@ MESSAGE_TEMPLATE = '''
     {today:#^28}
     🔅[{region_name}]{uid}
     今日奖励: {award_name} × {award_cnt}
-    本月累签: {total_sign_day} 天
+    本月累签: {total_sign_day} / {total_day}天
     签到结果: {status}
     {end:#^28}'''
 
